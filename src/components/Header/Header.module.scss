@@ -1,0 +1,78 @@
+.root {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.inner {
+  // border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+
+  // Лого
+  .logo {
+    min-width: 130px;
+    max-height: 40px;
+    background-color: #EDECFC;
+    border: 1px solid #D1CEE1;
+    color: #474545;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.15px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-align: center;
+  
+    &:hover {
+      background-color: #d5d3f8;
+    }
+  }
+
+}
+
+// Вкладки
+.buttons{
+  width: 700px;
+  // border: 1px solid red;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+// Burger menu
+.drawer{
+  display: none;
+}
+
+// Показываем Burger menu и убираем вкладки 
+@media (max-width: 780px) {
+  .buttons{
+    display: none;
+  }
+
+  .drawer{
+    // border: 1px solid yellow;
+    display: block;
+  }
+}
+
+// Вкладки Burger menu
+.buttons {
+  @media (max-width: 780px) {
+    .MainBut{
+        display: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+
+

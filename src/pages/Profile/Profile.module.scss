@@ -1,0 +1,49 @@
+.MainInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .avatar {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .WithOutAva{
+        margin-top: 50px;
+    }
+
+    .userDetails {
+        display: flex;
+        flex-direction: column;
+        
+        .userName {
+            font-weight: 500;
+            font-size: 24px;
+        }
+    
+        .additional {
+            font-size: 12px;
+            opacity: 0.6;
+        }
+    }
+
+    .btn{
+        margin-top: 20px;
+    }
+
+}
+
+.PostsHeader{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+  
